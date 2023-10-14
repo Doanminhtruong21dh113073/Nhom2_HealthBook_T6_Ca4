@@ -1,0 +1,217 @@
+// header {
+//   display: flex;
+//   align-items: center;
+//   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+//   height: 90px;
+//   background-color: #fff;
+
+//   .navbar {
+//     padding: 0;
+//   }
+
+//   .fa-moon {
+//     font-size: 22px;
+//   }
+// }
+
+// .navMasterwork {
+//   .navbar-brand {
+//     font-size: 26px;
+//     font-weight: 700;
+//     letter-spacing: -1px;
+//     color: #dc4f72;
+//     margin: 0;
+//     padding: 0;
+//   }
+// }
+
+// .navbar-light {
+//   .navbar-brand {
+//     &:focus,
+//     &:hover {
+//       color: #dc4f72;
+//     }
+//   }
+// }
+
+// #navbarMasterwork {
+//   .nav-item {
+//     padding: 0 15px;
+//     position: relative;
+
+//     &.active .nav-link {
+//       color: #dc4f72;
+//     }
+
+//     .nav-link {
+//       color: #2c3038;
+//       font-size: 16px;
+//       font-weight: 400;
+//       padding: 14px 0;
+//       transition: all 0.5s;
+
+//       &:hover {
+//         color: #dc4f72;
+
+//         &::before {
+//           width: 20px;
+//         }
+//       }
+
+//       &::before {
+//         content: "";
+//         position: absolute;
+//         background-color: #dc4f72;
+//         width: 0;
+//         height: 2px;
+//         bottom: 13px;
+//         transition: all 0.5s;
+//       }
+//     }
+
+//     .dropdown {
+//       i {
+//         position: absolute;
+//         right: 0px;
+//         top: 22px;
+//         font-size: 10px;
+//       }
+
+//       .nav-link:focus + i {
+//         color: #dc4f72;
+//       }
+
+//       &.dropdown-item {
+//         position: relative;
+//         padding-top: 0;
+//         padding-bottom: 14px;
+
+//         &:focus,
+//         &:hover {
+//           background-color: transparent;
+//           color: #dc4f72 !important;
+
+//           &::before {
+//             width: 20px;
+//           }
+//         }
+
+//         &::before {
+//           content: "";
+//           position: absolute;
+//           background-color: #dc4f72;
+//           width: 0;
+//           height: 2px;
+//           bottom: 13px;
+//           transition: all 0.5s;
+//         }
+//       }
+
+//       .dropdown-menu {
+//         transform: translateX(-50px);
+//         border-radius: 6px;
+//         min-width: 11rem;
+//         padding: 1rem 0 0.3rem;
+//         box-shadow: 1px 5px 7.5px rgba(14, 13, 13, 0.2);
+//         border: 1px solid #eee;
+
+//         &::before {
+//           content: "";
+//           display: block;
+//           width: 14px;
+//           height: 14px;
+//           color: white;
+//           background-color: #fff;
+//           border: 1px solid #eee;
+//           position: absolute;
+//           left: 49%;
+//           top: -7px;
+//           border-right: none;
+//           border-bottom: none;
+//           transform: rotateZ(45deg);
+//         }
+
+//         .dropdown-toggle::after {
+//           display: none;
+//         }
+//       }
+//     }
+
+//     .search {
+//       i {
+//         color: #5a5a5a;
+//         font-size: 15px;
+//         opacity: 0.7;
+//         width: 40px;
+//         height: 40px;
+//         line-height: 40px;
+//         text-align: center;
+//         background: #f7f9fc;
+//         border-radius: 50%;
+//         border: 1px solid #eee;
+
+//         &:hover {
+//           color: #2c3038;
+//           opacity: 1;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .carousel {
+//   margin-top: 90px;
+//   height: 100vh;
+//   margin-top: 90px;
+// }
+
+// .carousel__content {
+//   background: linear-gradient(to right, white, rgba(255, 255, 255, 0.92));
+//   position: relative;
+//   z-index: 1;
+//   height: 100%;
+//   overflow: hidden;
+//   background-position: center;
+//   background-attachment: fixed;
+//   background-size: cover;
+//   padding-top: 5rem;
+// }
+
+// .carousel__content h2 {
+//   font-size: 50px;
+//   line-height: 57.5px;
+//   font-weight: 700;
+// }
+
+// .carousel__content p {
+//   font-size: 20px;
+//   line-height: 28px;
+//   font-weight: 400;
+//   max-width: 450px;
+//   color: #5a5a5a;
+  
+// }
+
+// .btn {
+//   display: inline-block;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 10px 20px;
+//   font-size: 16px;
+//   border: none;
+//   border-radius: 5px;
+//   background-color: #3498db; /* màu xanh dương */
+//   color: #ffffff; /* màu chữ trắng */
+//   text-align: center;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// .btn:hover {
+//   background-color: #2980b9; /* màu xanh dương sẫm hơn khi rê chuột lên trên */
+// }
+
+// .btn:active {
+//   background-color: #2471a3; /* màu xanh dương càng sẫm hơn khi nhấn vào */
+// }
