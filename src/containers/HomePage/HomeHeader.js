@@ -1,85 +1,164 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import "./HomeHeader.scss";
-import { NavLink } from "react-router-dom";
-import banner from "../../assets/img/banner/1.jpg";
+import { FormattedMessage } from "react-intl";
+import { LANGUAGES } from "../../utils/constant.js";
+import { changeLanguageApp } from "../../store/actions/appActions";
 class HomeHeader extends Component {
-  render() {
-    return (
-      <>
-        {/* <header className="fixed-top">
-          <div className="container">
-            <nav className="navMasterwork navbar navbar-expand-lg navbar-light">
-              <NavLink className="navbar-brand" to="#">
-                <i className="fa fa-handshake" />
-                Masterwork
-              </NavLink>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarMasterwork"
-                aria-controls="navbarMasterwork"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <i className="fa icon-expand fa-bars" id="btnOpen" />
-                <i
-                  className="fa icon-close fa-times"
-                  id="btnClose"
-                  style={{ display: "none" }}
-                />
-              </button>
-              <div className="collapse navbar-collapse" id="navbarMasterwork">
-                <ul className="navbar-nav ml-lg-auto">
-                  <li className="nav-item active">
-                    <NavLink className="nav-link" to="index.html">
-                      Chuyên khoa
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="about.html">
-                      Cơ sở y tế
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="./services.html">
-                      Bác sĩ
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link" to="./contact.html">
-                      Gói khám
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-        </header>
+  changeLanguage = (language) => {
+    //fire redux event : actions
+    this.props.changeLanguageAppRedux(language);
+  };
 
-        <section className="carousel">
-          <div className="carousel__content">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-6 col-12 carousel__content__left">
-                  <h2>Chăm sóc bạn, từ trái tim đến sức khỏe</h2>
-                  <p className="mt-3 mb-4 mb-lg-5">
-                    Với sự tận tâm và chuyên môn, chúng tôi đồng hành cùng bạn
-                    trên mỗi bước đi của cuộc hành trình sức khỏe
-                  </p>
-                  <button type="button" className="btn">
-                    Đặt lịch ngay
-                  </button>
+  render() {
+    let language = this.props.language;
+
+    return (
+      <Fragment>
+        <div className="home-header-container">
+          <div className="home-header-content">
+            <div className="left-content">
+              <i className="fas fa-bars"></i>
+              <div className="header-logo"></div>
+              <div className="header"></div>
+            </div>
+            <div className="center-content">
+              <div className="child-content">
+                <div>
+                  <b>
+                    <FormattedMessage id="homeheader.speciality" />
+                  </b>
                 </div>
-                <div className="col-12 col-lg-6 carousel__content__right">
-                  <img className="img-fluid" src={banner} alt="main-img" />
+                <div className="subs-title">
+                  <FormattedMessage id="homeheader.searchdoctor" />
+                </div>
+              </div>
+              <div className="child-content">
+                <div>
+                  <b>
+                    <FormattedMessage id="homeheader.health-facility" />
+                  </b>
+                </div>
+                <FormattedMessage id="homeheader.select-room" />
+                <div className="subs-title"></div>
+              </div>
+              <div className="child-content">
+                <div>
+                  <b>
+                    <FormattedMessage id="homeheader.doctor" />
+                  </b>
+                </div>
+                <FormattedMessage id="homeheader.select-doctor" />
+                <div className="subs-title"></div>
+              </div>
+              <div className="child-content">
+                <div>
+                  <b>
+                    <FormattedMessage id="homeheader.fee" />
+                  </b>
+                </div>
+                <FormattedMessage id="homeheader.check-health" />
+                <div className="subs-title"></div>
+              </div>
+            </div>
+            <div className="right-content">
+              <div className="support">
+                <i className="fas fa-question-circle"> </i>
+                <FormattedMessage id="homeheader.support" />
+              </div>
+              <div
+                className={
+                  language === LANGUAGES.VI
+                    ? "language-vi active"
+                    : "language-vi"
+                }
+              >
+                <span onClick={() => this.changeLanguage(LANGUAGES.VI)}>
+                  VN
+                </span>
+              </div>
+              <div
+                className={
+                  language === LANGUAGES.EN
+                    ? "language-en active"
+                    : "language-en"
+                }
+              >
+                <span onClick={() => this.changeLanguage(LANGUAGES.EN)}>
+                  EN
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="home-header-banner">
+          <div className="content-up">
+            <div className="title-1">
+              <FormattedMessage id="banner.title1" />
+            </div>
+            <div className="title-2">
+              <FormattedMessage id="banner.title2" />
+            </div>
+            <div className="search">
+              <i className="fas fa-search"></i>
+              <input type="text" placeholder="Tìm chuyên khoa khám bệnh" />
+            </div>
+          </div>
+          <div className="content-down">
+            <div className="options">
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-hospital"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child1" />
+                </div>
+              </div>
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-mobile-alt"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child2" />
+                </div>
+              </div>
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-procedures"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child3" />
+                </div>
+              </div>
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-microscope"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child4" />
+                </div>
+              </div>
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-user-md"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child5" />
+                </div>
+              </div>
+              <div className="option-child">
+                <div className="icon-child">
+                  <i className="fas fa-tooth"></i>
+                </div>
+                <div className="text-child">
+                  <FormattedMessage id="banner.child6" />
                 </div>
               </div>
             </div>
           </div>
-        </section> */}
-      </>
+        </div>
+      </Fragment>
     );
   }
 }
@@ -87,11 +166,14 @@ class HomeHeader extends Component {
 const mapStateToProps = (state) => {
   return {
     isLoggedIn: state.user.isLoggedIn,
+    language: state.app.language,
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
-  return {};
+  return {
+    changeLanguageAppRedux: (language) => dispatch(changeLanguageApp(language)),
+  };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomeHeader);

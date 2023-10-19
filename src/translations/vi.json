@@ -1,120 +1,116 @@
 {
-    "common": {
-        "add": "Thêm",
-        "edit": "Sửa",
-        "delete": "Xóa",
-        "decentralize": "Phân quyền",
-        "close": "Đóng",
-        "save": "Lưu",
-        "refresh": "Refresh",
-        "accept": "Chấp nhận",
-        "confirm": "Xác nhận",
-        "confirm-this-task": "Bạn có chắc chắn thực hiện tác vụ này?",
-        "fail-to-load-data": "Không thể tải về dữ liệu",
-        "unknown-error": "Có lỗi xảy ra",
-        "internal-server-error": "Lỗi kết nối",
-        "bad-request": "Yêu cầu không hợp lệ",
-        "forbiden-request": "Thông tin truyền vào không hợp lệ",
-        "fail-to-load-all-code": "Không thể tải về dữ liệu allcode",
-        "sum": "Tổng",
-        "date-range-invalid": "Khoảng thời gian không hợp lệ"
-    },
-    "login": {
-        "login": "Đăng nhập",
-        "username": "Tên đăng nhập",
-        "password": "Mật khẩu",
-        "userpass-wrong": "Sai tên đăng nhập hoặc mật khẩu!"
-    },
-    "menu": {
-        "system": {
-            "header": "Hệ thống",
-            "system-administrator": {
-                "header": "Quản trị hệ thống",
-                "user-manage": "Quản lý người sử dụng",
-                "product-manage": "Quản lý gói",
-                "register-package-group-or-account": "Đăng ký gói dịch vụ cho nhóm/tài khoản"
-            },
-            "system-parameter": {
-                "header": "Tham số hệ thống"
-            }
-        }
-    },
+  "homeheader": {
+    "speciality": "Chuyên khoa y học",
+    "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
+    "health-facility": "Cơ sở y tế",
+    "select-room": "Chọn phòng khám bệnh viện",
+    "doctor": "Bác sĩ",
+    "select-doctor": "Chọn một bác sĩ giỏi",
+    "fee": "Gói khám bệnh",
+    "check-health": "Khám sức khỏe tổng quát",
+    "support": "Hỗ trợ"
+  },
+  "banner": {
+    "title1": "NỀN TẢNG Y HỌC",
+    "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
+    "child1": "Khám chuyên sâu",
+    "child2": "Khám từ xa",
+    "child3": "Khám tổng quát",
+    "child4": "Xét nghiệm y học",
+    "child5": "Sức khỏe tinh thần",
+    "child6": "Khám nha khoa"
+  },
+
+  "menu": {
     "system": {
-        "user-manage": {
-            "fail-to-load-fouser": "Không thể tải về danh sách người dùng",
-            "user-id": "Mã người sử dụng",
-            "usertype": "Loại người dùng",
-            "username": "Tên người dùng",
-            "fullname": "Tên đầy đủ",
-            "mobile": "Số điện thoại",
-            "email": "Email",
-            "status": "Trạng thái",
-            "add-user": "Thêm người dùng",
-            "edit-user": "Sửa thông tin người dùng",
-            "password": "Mật khẩu",
-            "retype-password": "Nhập lại mật khẩu",
-            "add-user-success": "Thêm người dùng thành công",
-            "edit-user-success": "Thay đổi thông tin người dùng thành công",
-            "add-user-fail": "Thêm người dùng thất bại",
-            "edit-user-fail": "Thay đổi thông tin người dùng thất bại",
-            "del-user-success": "Xóa người dùng thành công",
-            "del-user-fail": "Xóa người dùng thất bại",
-            "invalid-input": {
-                "username": "Quý khách vui lòng nhập tên người dùng",
-                "fullname": "Quý khách vui lòng nhập tên đầy đủ",
-                "password": "Quý khách vui lòng nhập mật khẩu"
-            },
-            "sure-delete-user": "Bạn có chắc chắn muốn xóa người dùng này?"
-        },
-        "product-manage": {
-            "fail-to-load-foprtype": "Không thể tải về danh sách gói",
-            "prid": "Mã gói",
-            "prname": "Tên gói",
-            "prtype": "Loại gói",
-            "status": "Trạng thái",
-            "description": "Diễn giải",
-            "effective-date": "Ngày hiệu lực",
-            "expiration-date": "Ngày hết hiệu lực",
-            "add-product": "Thêm gói",
-            "add-product-success": "Thêm gói thành công",
-            "add-product-fail": "Thêm gói thất bại",
-            "edit-product": "Sửa thông tin gói",
-            "package-decentralize": "Phân quyền chức năng",
-            "edit-product-success": "Thay đổi thông tin gói thành công",
-            "edit-product-fail": "Thay đổi thông tin gói thất bại",
-            "delete-product-success": "Xóa gói thành công",
-            "delete-product-fail": "Xóa gói thất bại",
-            "invalid-input": {
-                "prid": "Quý khách vui lòng nhập mã gói",
-                "prname": "Quý khách vui lòng nhập tên gói"
-            },
-            "fail-to-load-decentralize-info": "Không thể tải về thông tin phân quyền chức năng",
-            "save-decentralize-success": "Lưu phân quyền chức năng thành công",
-            "save-decentralize-fail": "Lưu phân quyền chức năng thất bại",
-            "sure-delete-package": "Bạn có chắc chắn muốn xóa gói này?"
-        },
-        "register-package-group-or-acc": {
-            "assign-service-package-to-customer": "Gán gói dịch vụ cho khách hàng",
-            "package-name": "Tên gói",
-            "assign-type": "Loại gán",
-            "cust-acc-group": "Nhóm KH/Tài khoản",
-            "effective-date": "Ngày hiệu lực",
-            "expiration-date": "Ngày hết hiệu lực",
-            "assign": "Gán",
-            "manage-assign-groups": "Quản lý gán nhóm",
-            "group-cust-acc-name": "Tên nhóm/tài khoản KH",
-            "del-assign": "Xóa gán",
-            "fail-to-load-manage-assign-groups-list": "Không thể tải về thông tin quản lý gán nhóm",
-            "invalid-selected": {
-                "currentfoProduct": "Gói đang chọn không hợp lệ",
-                "currentAssignType": "Loại gán không hợp lệ",
-                "currentFoUser": "Nhóm KH/Tài khoản không hợp lệ"
-            },
-            "assign-service-package-to-customer-success": "Gán gói dịch vụ cho khách hàng thành công",
-            "assign-service-package-to-customer-fail": "Gán gói dịch vụ cho khách hàng thất bại",
-            "remove-assign-success": "Bỏ gán gói dịch vụ cho khách hàng thành công",
-            "remove-assign-fail": "Bỏ gán gói dịch vụ cho khách hàng thất bại",
-            "sure-delete-assign": "Bạn có chắc chắn muốn bỏ gán gói dịch vụ cho khách hàng?"
-        }
+      "header": "System",
+      "system-administrator": {
+        "header": "System Administrator",
+        "user-manage": "User manage",
+        "product-manage": "Package manage",
+        "register-package-group-or-account": "Register service package for group/account"
+      },
+      "system-parameter": {
+        "header": "System-parameter"
+      }
     }
+  },
+  "system": {
+    "user-manage": {
+      "fail-to-load-fouser": "Fail to load system users list",
+      "user-id": "User ID",
+      "usertype": "User type",
+      "username": "Username",
+      "fullname": "Fullname",
+      "mobile": "Phone",
+      "email": "Email",
+      "status": "Status",
+      "add-user": "Add user",
+      "edit-user": "Edit user information",
+      "password": "Password",
+      "retype-password": "Retype password",
+      "add-user-success": "Add user successfully",
+      "edit-user-success": "Change user information successfully",
+      "add-user-fail": "Fail to add user",
+      "edit-user-fail": "Fail to change user information",
+      "del-user-success": "Delete user successfully",
+      "del-user-fail": "Fail to delete user",
+      "invalid-input": {
+        "username": "Please fill in username",
+        "fullname": "Please fill in fullname",
+        "password": "Please fill in password"
+      },
+      "sure-delete-user": "Are you sure to delete this user?"
+    },
+    "product-manage": {
+      "fail-to-load-foprtype": "Fail to load packages list",
+      "prid": "Package ID",
+      "prname": "Package name",
+      "prtype": "Package type",
+      "status": "Status",
+      "description": "Description",
+      "effective-date": "Effective date",
+      "expiration-date": "Expiration date",
+      "add-product": "Add package",
+      "add-product-success": "Add package successfully",
+      "add-product-fail": "Fail to add package",
+      "edit-product": "Edit package information",
+      "package-decentralize": "Package decentralize",
+      "edit-product-success": "Edit package information successfully",
+      "edit-product-fail": "Fail to edit package information",
+      "delete-product-success": "Delete package successfully",
+      "delete-product-fail": "Fail to delete package",
+      "invalid-input": {
+        "prid": "Please fill in package ID",
+        "prname": "Please fill in package name"
+      },
+      "fail-to-load-decentralize-info": "Fail to load decentralize info",
+      "save-decentralize-success": "Save decentralization successfully",
+      "save-decentralize-fail": "Fail to save decentralization",
+      "sure-delete-package": "Are you sure to delete this package?"
+    },
+    "register-package-group-or-acc": {
+      "assign-service-package-to-customer": "Assign service package to customer",
+      "package-name": "Package name",
+      "assign-type": "Assign type",
+      "cust-acc-group": "Customer/account group",
+      "effective-date": "Effective date",
+      "expiration-date": "Expiration date",
+      "assign": "Assign",
+      "manage-assign-groups": "Manage assign groups",
+      "group-cust-acc-name": "Group/customer account name",
+      "del-assign": "Del assign",
+      "fail-to-load-manage-assign-groups-list": "Fail to load manage assign groups list",
+      "invalid-selected": {
+        "currentfoProduct": "Invalid package",
+        "currentAssignType": "Invalid assign type",
+        "currentFoUser": "Invalid customer/account group"
+      },
+      "assign-service-package-to-customer-success": "Assign service package to customer successfully",
+      "assign-service-package-to-customer-fail": "Fail to assign service package to customer",
+      "remove-assign-success": "Unassign service package to customer successfully",
+      "remove-assign-fail": "Fail to unassign service package to customer",
+      "sure-delete-assign": "Are you sure to unassign service package to customer?"
+    }
+  }
 }

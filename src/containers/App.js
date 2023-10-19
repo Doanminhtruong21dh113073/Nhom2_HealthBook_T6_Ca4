@@ -18,8 +18,7 @@ import Header from "./Header/Header";
 import System from "../routes/System";
 
 import { CustomToastCloseButton } from "../components/CustomToast";
-import ConfirmModal from "../components/ConfirmModal";
-import HomePage from "./HomePage/HomePage";
+import HomePage from "./HomePage/HomePage.js";
 class App extends Component {
   handlePersistorState = () => {
     const { persistor } = this.props;
@@ -57,7 +56,7 @@ class App extends Component {
                   path={path.SYSTEM}
                   component={userIsAuthenticated(System)}
                 />
-                <Route path={path.HOEMPAGE} component={HomePage} />
+                <Route path={path.HOMEPAGE} component={HomePage} />
               </Switch>
             </span>
 
