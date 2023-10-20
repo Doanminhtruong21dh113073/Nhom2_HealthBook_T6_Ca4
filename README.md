@@ -1,4 +1,13 @@
-# Nhom2_HealthBook_T6_Ca4
+<table>
+    <tr>
+        <td>
+            <span class="typewriter-text">Đây là bệnh viện của tôi</span>
+        </td>
+    </tr>
+</table>
+
+
+
 <a href="#" target="_blank">
   <img src="svg/nhom2.svg" width="1200" alt="Healthbook" />
 </a>
