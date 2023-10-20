@@ -54,8 +54,8 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 
 ## 🛠 Các thành viên của nhóm 🛠
 - Phạm Hải Sơn : 21DH112887
--
--
+- Nguyễn Đình Quốc Uy : 21DH112132
+- Đoàn Minh Trường : 21DH113073
 ![Thành viên nhóm](https://kenh14cdn.com/2017/photo-3-1496047731532.jpg)
 
 
