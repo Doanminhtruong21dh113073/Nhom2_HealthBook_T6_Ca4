@@ -1,4 +1,4 @@
-<script>
+<table></table>
         let text = "Đây là bệnh viện của tôi";
         let speed = 100; // Tốc độ chữ chạy (milliseconds per character)
 
@@ -12,7 +12,7 @@
 
         let i = 0;
         window.onload = typeWriter;
-    </script>
+    </table>
 
 
 
