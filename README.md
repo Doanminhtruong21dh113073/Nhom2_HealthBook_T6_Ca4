@@ -50,9 +50,11 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 <a href="#" target="_blank">
   <img src="svg/nhom2.svg" width="1200" alt="Healthbook" />
 </a>
+
+
 ## 🛠 Các thành viên của nhóm 🛠
 - Phạm Hải Sơn : 21DH112887
 -
 -
-<img align="left" src="https://kenh14cdn.com/2017/photo-3-1496047731532.jpg"
+<img align="left" src="photo-3-1496047731532.webp"
 
