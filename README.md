@@ -1,10 +1,18 @@
-<table>
-    <tr>
-        <td>
-            <span class="typewriter-text">Đây là bệnh viện của tôi</span>
-        </td>
-    </tr>
-</table>
+<script>
+        let text = "Đây là bệnh viện của tôi";
+        let speed = 100; // Tốc độ chữ chạy (milliseconds per character)
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("demo").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        let i = 0;
+        window.onload = typeWriter;
+    </script>
 
 
 
