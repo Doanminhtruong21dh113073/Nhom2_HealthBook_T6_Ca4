@@ -44,6 +44,26 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 
 ⭐️ Mang đến bạn bởi đội ngũ [HealthBooking](https://github.com/HealthBooking)
 
+<div style="display: flex; justify-content: space-between;">
+
+<div style="width: 60%;">
+
+## 🛠 Các thành viên của nhóm 🛠
+
+</div>
+
+<div style="width: 40%;">
+
+| **Thành viên**          | **Mã sinh viên** |
+|------------------------|------------------|
+| **Phạm Hải Sơn**       | 21DH112887       |
+| **Nguyễn Đình Quốc Uy**| 21DH112132       |
+| **Đoàn Minh Trường**   | 21DH113073       |
+
+</div>
+
+</div>
+
 
 
 
@@ -52,10 +72,7 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 </a>
 
 
-## 🛠 Các thành viên của nhóm 🛠
-- Phạm Hải Sơn : 21DH112887
-- Nguyễn Đình Quốc Uy : 21DH112132
-- Đoàn Minh Trường : 21DH113073
-![Thành viên nhóm](https://kenh14cdn.com/2017/photo-3-1496047731532.jpg)
+
+
 
 
