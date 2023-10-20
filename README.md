@@ -1,4 +1,4 @@
-<h2 ĐÂY LÀ APP QUẢN LÍ BỆNH VIỆN /h2>
+<h2></h2> ĐÂY LÀ APP QUẢN LÍ BỆNH VIỆN </h2>
 
 
 
