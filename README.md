@@ -56,5 +56,6 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 - Phạm Hải Sơn : 21DH112887
 -
 -
-<img align="left" src="[photo-3-1496047731532.webp](https://kenh14cdn.com/thumb_w/620/2017/photo-3-1496047731532.jpg)https://kenh14cdn.com/thumb_w/620/2017/photo-3-1496047731532.jpg"
+![Thành viên nhóm](https://kenh14cdn.com/2017/photo-3-1496047731532.jpg)
+
 
