@@ -23,10 +23,11 @@
 
   "menu": {
     "system": {
-      "header": "System",
+      "header": "Hệ Thống",
       "system-administrator": {
         "header": "System Administrator",
         "user-manage": "User manage",
+        "user-redux": "Quản lý using redux",
         "product-manage": "Package manage",
         "register-package-group-or-account": "Register service package for group/account"
       },

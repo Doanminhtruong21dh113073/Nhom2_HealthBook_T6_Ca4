@@ -4,6 +4,7 @@ import "./HomeHeader.scss";
 import { FormattedMessage } from "react-intl";
 import { LANGUAGES } from "../../utils/constant.js";
 import { changeLanguageApp } from "../../store/actions/appActions";
+import Header from "../Header/Header";
 class HomeHeader extends Component {
   changeLanguage = (language) => {
     //fire redux event : actions
