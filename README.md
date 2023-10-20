@@ -38,7 +38,7 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 ## 📫 Kết nối với HealthBooking
 - 💌 Email: [contact@healthbooking.com](mailto:contact@healthbooking.com)
 - 📞 Điện thoại: [+84 934328213]
-- 🌐 Website: [HealthBooking Chính Thức](https://bookingcare.vn)
+- 🌐 Website: [HealthBooking Chính Thức](https://google.com)
 
 ---
 
