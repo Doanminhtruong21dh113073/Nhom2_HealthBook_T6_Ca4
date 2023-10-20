@@ -2,7 +2,7 @@
 
 <img align="left" src="https://i.giphy.com/media/2IudUHdI075HL02Pkk/giphy.webp" alt="Hình ảnh HealthBooking" width="240"/>
 
-# HealthBooking: Sức Khỏe Trong Tầm Tay Bạn 🌍
+# HealthBooking: Sức Khỏe Trong Tầm Tay Bạn 🚑
 
 </div>
 
