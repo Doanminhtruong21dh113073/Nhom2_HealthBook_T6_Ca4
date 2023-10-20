@@ -1,18 +1,4 @@
-<table></table>
-        let text = "Đây là bệnh viện của tôi";
-        let speed = 100; // Tốc độ chữ chạy (milliseconds per character)
-
-        function typeWriter() {
-            if (i < text.length) {
-                document.getElementById("demo").innerHTML += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        let i = 0;
-        window.onload = typeWriter;
-    </table>
+<h2 ĐÂY LÀ APP QUẢN LÍ BỆNH VIỆN /h2>
 
 
 
