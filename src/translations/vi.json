@@ -1,117 +1,54 @@
 {
   "homeheader": {
-    "speciality": "Chuyên khoa y học",
-    "searchdoctor": "Tìm bác sĩ theo chuyên khoa",
+    "speciality": "Chuyên ngành y khoa",
+    "searchdoctor": "Tìm bác sĩ theo chuyên ngành",
     "health-facility": "Cơ sở y tế",
     "select-room": "Chọn phòng khám bệnh viện",
     "doctor": "Bác sĩ",
     "select-doctor": "Chọn một bác sĩ giỏi",
     "fee": "Gói khám bệnh",
     "check-health": "Khám sức khỏe tổng quát",
-    "support": "Hỗ trợ"
+    "support": "Hỗ trợ",
+    "welcome": "Chào mừng  "
   },
   "banner": {
-    "title1": "NỀN TẢNG Y HỌC",
+    "title1": "NỀN TẢNG Y KHOA",
     "title2": "CHĂM SÓC SỨC KHỎE TOÀN DIỆN",
     "child1": "Khám chuyên sâu",
     "child2": "Khám từ xa",
     "child3": "Khám tổng quát",
-    "child4": "Xét nghiệm y học",
-    "child5": "Sức khỏe tinh thần",
+    "child4": "Xét nghiệm y tế",
+    "child5": "Sức khỏe tâm thần",
     "child6": "Khám nha khoa"
   },
-
   "menu": {
-    "system": {
-      "header": "Hệ Thống",
-      "system-administrator": {
-        "header": "System Administrator",
-        "user-manage": "User manage",
-        "user-redux": "Quản lý using redux",
-        "product-manage": "Package manage",
-        "register-package-group-or-account": "Register service package for group/account"
-      },
-      "system-parameter": {
-        "header": "System-parameter"
-      }
+    "admin": {
+      "manage-user": "Hệ thống người dùng",
+      "manage-doctor": "Quản lý bác sĩ",
+      "manage-admin": "Quản lý quản trị viên",
+      "crud": "CRUD người dùng",
+      "crud-redux": "CRUD redux",
+      "clinic": "Phòng khám",
+      "manage-clinic": "Quản lý phòng khám",
+      "specialty": "Chuyên ngành",
+      "manage-specialty": "Quản lý chuyên ngành",
+      "handbook": "Sổ tay",
+      "manage-handbook": "Quản lý sổ tay"
     }
   },
-  "system": {
-    "user-manage": {
-      "fail-to-load-fouser": "Fail to load system users list",
-      "user-id": "User ID",
-      "usertype": "User type",
-      "username": "Username",
-      "fullname": "Fullname",
-      "mobile": "Phone",
-      "email": "Email",
-      "status": "Status",
-      "add-user": "Add user",
-      "edit-user": "Edit user information",
-      "password": "Password",
-      "retype-password": "Retype password",
-      "add-user-success": "Add user successfully",
-      "edit-user-success": "Change user information successfully",
-      "add-user-fail": "Fail to add user",
-      "edit-user-fail": "Fail to change user information",
-      "del-user-success": "Delete user successfully",
-      "del-user-fail": "Fail to delete user",
-      "invalid-input": {
-        "username": "Please fill in username",
-        "fullname": "Please fill in fullname",
-        "password": "Please fill in password"
-      },
-      "sure-delete-user": "Are you sure to delete this user?"
-    },
-    "product-manage": {
-      "fail-to-load-foprtype": "Fail to load packages list",
-      "prid": "Package ID",
-      "prname": "Package name",
-      "prtype": "Package type",
-      "status": "Status",
-      "description": "Description",
-      "effective-date": "Effective date",
-      "expiration-date": "Expiration date",
-      "add-product": "Add package",
-      "add-product-success": "Add package successfully",
-      "add-product-fail": "Fail to add package",
-      "edit-product": "Edit package information",
-      "package-decentralize": "Package decentralize",
-      "edit-product-success": "Edit package information successfully",
-      "edit-product-fail": "Fail to edit package information",
-      "delete-product-success": "Delete package successfully",
-      "delete-product-fail": "Fail to delete package",
-      "invalid-input": {
-        "prid": "Please fill in package ID",
-        "prname": "Please fill in package name"
-      },
-      "fail-to-load-decentralize-info": "Fail to load decentralize info",
-      "save-decentralize-success": "Save decentralization successfully",
-      "save-decentralize-fail": "Fail to save decentralization",
-      "sure-delete-package": "Are you sure to delete this package?"
-    },
-    "register-package-group-or-acc": {
-      "assign-service-package-to-customer": "Assign service package to customer",
-      "package-name": "Package name",
-      "assign-type": "Assign type",
-      "cust-acc-group": "Customer/account group",
-      "effective-date": "Effective date",
-      "expiration-date": "Expiration date",
-      "assign": "Assign",
-      "manage-assign-groups": "Manage assign groups",
-      "group-cust-acc-name": "Group/customer account name",
-      "del-assign": "Del assign",
-      "fail-to-load-manage-assign-groups-list": "Fail to load manage assign groups list",
-      "invalid-selected": {
-        "currentfoProduct": "Invalid package",
-        "currentAssignType": "Invalid assign type",
-        "currentFoUser": "Invalid customer/account group"
-      },
-      "assign-service-package-to-customer-success": "Assign service package to customer successfully",
-      "assign-service-package-to-customer-fail": "Fail to assign service package to customer",
-      "remove-assign-success": "Unassign service package to customer successfully",
-      "remove-assign-fail": "Fail to unassign service package to customer",
-      "sure-delete-assign": "Are you sure to unassign service package to customer?"
-    }
+  "manage-user": {
+    "add": "Thêm người dùng",
+    "email": "Email",
+    "password": "Mật khẩu",
+    "firstName": "Tên",
+    "lastName": "Họ và tên đệm",
+    "phone": "Số điện thoại",
+    "address": "Địa chỉ",
+    "gender": "Giới tính",
+    "genderMale": "Nam",
+    "position": "Chức vụ",
+    "roleId": "Mã vai trò",
+    "image": "Hình ảnh",
+    "submit": "Gửi"
   }
 }

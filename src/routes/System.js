@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect, Route, Switch } from "react-router-dom";
 import UserManage from "../containers/System/UserManage";
-import UserRedux from "../containers/System/UserRedux";
+import UserRedux from "../containers/System/Admin/UserRedux";
 import Header from "../containers/Header/Header";
 
 class System extends Component {
@@ -29,10 +29,10 @@ class System extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     systemMenuPath: state.app.systemMenuPath,
-    isLoggedIn: state.user.isLoggedIn
+    isLoggedIn: state.user.isLoggedIn,
   };
 };
 

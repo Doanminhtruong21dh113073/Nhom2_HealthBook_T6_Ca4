@@ -4,7 +4,6 @@ import "./HomeHeader.scss";
 import { FormattedMessage } from "react-intl";
 import { LANGUAGES } from "../../utils/constant.js";
 import { changeLanguageApp } from "../../store/actions/appActions";
-import Header from "../Header/Header";
 class HomeHeader extends Component {
   changeLanguage = (language) => {
     //fire redux event : actions
@@ -167,6 +166,7 @@ class HomeHeader extends Component {
 const mapStateToProps = (state) => {
   return {
     isLoggedIn: state.user.isLoggedIn,
+    userInfo: state.user.userInfo,
     language: state.app.language,
   };
 };
