@@ -22,8 +22,10 @@
   }
 
   .language {
+    display: flex;
+    align-items: center;
+    margin-right: -900px;
     .welcome {
-      margin-right: 10px;
     }
     .language-en {
       margin-right: 15px;

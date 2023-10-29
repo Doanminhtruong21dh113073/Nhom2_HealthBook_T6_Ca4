@@ -14,7 +14,9 @@ class section extends Component {
         <div className="section-container">
           <div className="section-header">
             <span className="title-section"> Bác sĩ nổi bật tuần qua</span>
-            <button className="btn-section">Xêm thêm</button>
+            <button className="btn-section btn btn-md btn-light effect">
+              Xêm thêm
+            </button>
           </div>
           <div className="section-body">
             <Slider {...this.props.settings}>

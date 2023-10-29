@@ -18,7 +18,7 @@
       padding: 0 15px;
       border-right: 1px solid $border;
       &:first-child {
-        border-left: 1px solid $border;
+        border:none;
       }
     }
     .menu-list {

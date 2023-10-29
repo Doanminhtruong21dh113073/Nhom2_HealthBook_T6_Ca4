@@ -27,8 +27,8 @@ class HomePage extends Component {
         <MedicalFacility settings={settings} />
         <OutStandingDoctor settings={settings} />
         <HandBook settings={settings} />
-        <HomeFooter  />
         <div style={{ height: "300px" }}></div>
+        <HomeFooter  />
       </div>
     );
   }
