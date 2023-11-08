@@ -1,82 +1,66 @@
-<div align="center">
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<img align="left" src="https://i.giphy.com/media/2IudUHdI075HL02Pkk/giphy.webp" alt="Hình ảnh HealthBooking" width="240"/>
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-# HealthBooking: Sức Khỏe Trong Tầm Tay Bạn 🚑
+## About Laravel
 
-</div>
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## 🎉 Chào mừng đến với **HealthBooking**! 🎉
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Trong thời đại của công nghệ, chúng tôi tin vào việc tận dụng sức mạnh của internet để giúp việc tiếp cận dịch vụ y tế trở nên dễ dàng hơn. Nói lời tạm biệt với việc phải chờ đợi trong hàng giờ và phải đối mặt với hệ thống bệnh viện phức tạp. Với **HealthBooking**, sức khỏe của bạn nằm ngay trong tầm tay. 🚀
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-Sứ mệnh chính của chúng tôi là mang đến trải nghiệm không mất công cho bệnh nhân và cùng lúc tối ưu hóa quá trình đặt lịch cho các chuyên gia y tế. Đây không chỉ là một ứng dụng; đó là một công cụ biến đổi giúp định hình lại cách tiếp cận và cung cấp dịch vụ y tế.
+## Learning Laravel
 
-**Hình ảnh trên:** Sự kết hợp hoàn hảo giữa công nghệ và y tế, thể hiện sự cam kết của chúng tôi trong việc đơn giản hóa và nâng cao trải nghiệm của bệnh nhân.
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những người có ít kinh nghiệm về công nghệ cũng có thể dễ dàng đặt lịch hẹn. Hơn nữa, hệ thống phía sau mạnh mẽ của chúng tôi đảm bảo bảo mật thông tin và an ninh tuyệt đối. Sức khỏe của bạn là vô giá, và chúng tôi đối xử với dữ liệu của bạn với sự tôn trọng xứng đáng. 🔒
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-## 🛠 Tính năng & Công cụ 
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-### 🌐 Giao diện người dùng:
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" />
-<img align="left" alt="SCSS" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/sass/sass.png" />
-<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" /><br>
+## Laravel Sponsors
 
-### 🖥 Hệ thống phía sau & Cơ sở dữ liệu:
-<img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" />
-<img align="left" alt="Express.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/express/express.png" />
-<img align="left" alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" /><br>
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Công cụ khác:
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" />
-<img align="left" alt="Docker" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" />
-<br>
+### Premium Partners
 
+- **[Vehikl](https://vehikl.com/)**
+- **[Tighten Co.](https://tighten.co)**
+- **[WebReinvent](https://webreinvent.com/)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+- **[Cyber-Duck](https://cyber-duck.co.uk)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Jump24](https://jump24.co.uk)**
+- **[Redberry](https://redberry.international/laravel/)**
+- **[Active Logic](https://activelogic.com)**
+- **[byte5](https://byte5.de)**
+- **[OP.GG](https://op.gg)**
 
-## 📫 Kết nối với HealthBooking
-- 💌 Email: [contact@healthbooking.com](mailto:contact@healthbooking.com)
-- 📞 Điện thoại: [+84 934328213]
-- 🌐 Website: [HealthBooking Chính Thức](https://google.com)
+## Contributing
 
----
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-⭐️ Mang đến bạn bởi đội ngũ [HealthBooking](https://github.com/HealthBooking)
+## Code of Conduct
 
-<div style="display: flex; justify-content: space-between;">
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-<div style="width: 60%;">
+## Security Vulnerabilities
 
-## 👴 Các thành viên của nhóm 👴
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-</div>
+## License
 
-<div style="width: 40%;">
-
-| **Thành viên**          | **Mã sinh viên** |
-|------------------------|------------------|
-| **Phạm Hải Sơn**       | 21DH112887       |
-| **Nguyễn Đình Quốc Uy**| 21DH112132       |
-| **Đoàn Minh Trường**   | 21DH113073       |
-
-</div>
-
-</div>
-
-
-
-
-<a href="#" target="_blank">
-  <img src="svg/nhom2.svg" width="1200" alt="Healthbook" />
-</a>
-
-<br>
-
-
-
-
-
-
-
-
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
