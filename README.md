@@ -1,66 +1,123 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<img align="left" src="https://i.giphy.com/media/2IudUHdI075HL02Pkk/giphy.webp" alt="Hình ảnh HealthBooking" width="240"/>
 
-## About Laravel
+# HealthBooking: Sức Khỏe Trong Tầm Tay Bạn 🚑
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎉 Chào mừng đến với **HealthBooking**! 🎉
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Trong thời đại của công nghệ, chúng tôi tin vào việc tận dụng sức mạnh của internet để giúp việc tiếp cận dịch vụ y tế trở nên dễ dàng hơn. Nói lời tạm biệt với việc phải chờ đợi trong hàng giờ và phải đối mặt với hệ thống bệnh viện phức tạp. Với **HealthBooking**, sức khỏe của bạn nằm ngay trong tầm tay. 🚀
 
-## Learning Laravel
+Sứ mệnh chính của chúng tôi là mang đến trải nghiệm không mất công cho bệnh nhân và cùng lúc tối ưu hóa quá trình đặt lịch cho các chuyên gia y tế. Đây không chỉ là một ứng dụng; đó là một công cụ biến đổi giúp định hình lại cách tiếp cận và cung cấp dịch vụ y tế.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+**Hình ảnh trên:** Sự kết hợp hoàn hảo giữa công nghệ và y tế, thể hiện sự cam kết của chúng tôi trong việc đơn giản hóa và nâng cao trải nghiệm của bệnh nhân.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những người có ít kinh nghiệm về công nghệ cũng có thể dễ dàng đặt lịch hẹn. Hơn nữa, hệ thống phía sau mạnh mẽ của chúng tôi đảm bảo bảo mật thông tin và an ninh tuyệt đối. Sức khỏe của bạn là vô giá, và chúng tôi đối xử với dữ liệu của bạn với sự tôn trọng xứng đáng. 🔒
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🛠 Tính năng & Công cụ 
 
-## Laravel Sponsors
+### 🌐 Giao diện người dùng:
+<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" />
+<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" />
+<img align="left" alt="SCSS" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/sass/sass.png" />
+<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" /><br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🖥 Hệ thống phía sau & Cơ sở dữ liệu:
+<img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" />
+<img align="left" alt="Express.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/express/express.png" />
+<img align="left" alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" /><br>
 
-### Premium Partners
+### Công cụ khác:
+<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" />
+<img align="left" alt="Docker" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" />
+<br>
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
+## 📫 Kết nối với HealthBooking
+- 💌 Email: [contact@healthbooking.com](mailto:contact@healthbooking.com)
+- 📞 Điện thoại: [+84 934328213]
+- 🌐 Website: [HealthBooking Chính Thức](https://google.com)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+⭐️ Mang đến bạn bởi đội ngũ [HealthBooking](https://github.com/HealthBooking)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<div style="display: flex; justify-content: space-between;">
 
-## Security Vulnerabilities
+<div style="width: 60%;">
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 👴 Các thành viên của nhóm 👴
 
-## License
+</div>
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<div style="width: 40%;">
+
+| **Thành viên**          | **Mã sinh viên** |
+|------------------------|------------------|
+| **Phạm Hải Sơn**       | 21DH112887       |
+| **Nguyễn Đình Quốc Uy**| 21DH112132       |
+| **Đoàn Minh Trường**   | 21DH113073       |
+
+</div>
+
+</div>
+
+
+
+
+<a href="#" target="_blank">
+  <img src="svg/nhom2.svg" width="1200" alt="Healthbook" />
+</a>
+<h2 align="center">🛠 Technologies and Tools 🛠</h2>
+<br>
+<!-- https://simpleicons.org/ -->
+<span><img src="https://img.shields.io/badge/JavaScript-282C34?logo=javascript&logoColor=F7DF1E" alt="JavaScript logo" title="JavaScript" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/TypeScript-282C34?logo=typescript&logoColor=3178C6" alt="TypeScript logo" title="TypeScript" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/ReactJS-282C34?logo=react&logoColor=61DAFB" alt="ReactJS logo" title="ReactJS" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Redux-282C34?logo=redux&logoColor=764ABC" alt="Redux logo" title="Redux" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Vue.js-282C34?logo=vue.js&logoColor=4FC08D" alt="Vue.js logo" title="Vue.js" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Nuxt.js-282C34?logo=nuxt.js&logoColor=4FC08D" alt="Nuxt.js logo" title="Nuxt.js" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Node.js-282C34?logo=node.js&logoColor=00F200" alt="Node.js logo" title="Node.js" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Express-282C34?logo=express&logoColor=FFFFFF" alt="Express.js logo" title="Express.js" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/MongoDB-282C34?logo=mongodb&logoColor=47A248" alt="MongoDB logo" title="MongoDB" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Tailwind%20CSS-282C34?logo=tailwind-css&logoColor=38B2AC" alt="TailwindCSS logo" title="TailwindCSS" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Three.js-282C34?logo=three.js&logoColor=FFFFFF" alt="Three.js logo" title="Three.js" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/HTML5-282C34?logo=html5&logoColor=E34F26" alt="HTML5 logo" title="HTML5" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/CSS3-282C34?logo=css3&logoColor=1572B6" alt="CSS3 logo" title="CSS3" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Sass-282C34?logo=sass&logoColor=CC6699" alt="SASS logo" title="SASS" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/Bootstrap-282C34?logo=bootstrap&logoColor=7952B3" alt="Bootstrap logo" title="Bootstrap" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/ESLint-282C34?logo=eslint&logoColor=4B32C3" alt="ESLint logo" title="ESLint" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/git-282C34?logo=git&logoColor=F05032" alt="git logo" title="git" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/VS%20Code-282C34?logo=visual-studio-code&logoColor=007ACC" alt="Visual Studio Code logo" title="Visual Studio Code" height="25" /></span>
+&nbsp;
+<span><img src="https://img.shields.io/badge/WordPress-282C34?logo=wordPress&logoColor=21759B" alt="WordPress logo" title="WordPress" height="25" /></span>
+&nbsp;
+
+<br>
+
+
+
+
+
+
+
+
