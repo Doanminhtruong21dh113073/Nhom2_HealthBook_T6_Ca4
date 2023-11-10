@@ -3,6 +3,7 @@
 @section('action', 'Bill')
 
 @push('css')
+    <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('administrator/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet"
         href="{{ asset('administrator/plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
@@ -10,6 +11,7 @@
 @endpush
 
 @push('js')
+    <!-- DataTables  & Plugins -->
     <script src="{{ asset('administrator/plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('administrator/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
     <script src="{{ asset('administrator/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
@@ -40,6 +42,7 @@
 
 @section('content')
     <div class="card">
+       
         <!-- /.card-header -->
         <div class="card-body">
             <table id="example1" class="table table-bordered table-hover">
@@ -47,15 +50,18 @@
                     <tr>
                         <th>STT</th>
                         <th>
-                            Khách hàng | Số Điện Thoại </th>
+                            Khách hàng |
+                            Số Điện Thoại </th>
                         <th>
-                            Bác Sĩ
+                            Bác Sĩ 
                         </th>
                         <th>
-                            Combo | Dịch vụ :
+                            Combo |
+                            Dịch vụ : 
                         </th>
                         <th>
-                            Ngày | Thời gian
+                            Ngày |
+                            Thời gian
                         </th>
                         <th>Thanh toán</th>
                     </tr>
@@ -68,7 +74,7 @@
                                 {{ $item->customer }} <br>
                                 {{ $item->phone }}
                             </td>
-                            <td> {{ $item->barber_name }}
+                            <td> {{ $item->barber_name }} 
                             </td>
                             <td>
                                 {{ $item->category }} |
@@ -82,6 +88,8 @@
                                     href="{{ route('admin.cash.create', ['id' => $item->id]) }}">Thanh toán</a></td>
                         </tr>
                     @endforeach
+
+
                 </tbody>
             </table>
         </div>

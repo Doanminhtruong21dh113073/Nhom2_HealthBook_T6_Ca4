@@ -1,16 +1,16 @@
 @extends('admin.master')
-
 @section('module', 'Đặt Lịch')
 @section('action', 'Khám Bệnh')
 
 @push('date')
+    {{-- <link rel="stylesheet" href="{{asset('administrator/plugins/daterangepicker/daterangepicker.css')}}"> --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/date.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/time.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/day.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/img.css') }}">
 @endpush
-
 @push('datejs')
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script> --}}
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
         $.ajaxSetup({
@@ -29,14 +29,16 @@
                 },
                 dataType: "html",
                 success: function(data) {
+
                     $("input#date-date").val(data);
                 }
             });
-        });
+        })
 
         $("#getDate").change(function() {
             var $id = $(this).val();
             var $id1 = $("input.radio-barber:checked").val();
+            // alert($id1);
             $.ajax({
                 type: "POST",
                 url: "{{ route('admin.booking.getTime') }}",
@@ -49,8 +51,7 @@
                     $("#getTime").html(data);
                 }
             });
-        });
-
+        })
         $("select#select-category").change(function() {
             var $categoryId = $(this).val();
 
@@ -65,6 +66,7 @@
                     $("#getBarber").html(barberData);
                 }
             });
+          
 
             $.ajax({
                 type: "POST",
@@ -92,7 +94,7 @@
                     $("#phone-email").html(data);
                 }
             });
-        });
+        })
     </script>
     <script>
         $(function() {
@@ -102,7 +104,6 @@
         });
     </script>
 @endpush
-
 @section('content')
     <div class="card">
         <form action="{{ route('admin.booking.store') }}" method="post">
@@ -167,7 +168,7 @@
                                 <div id="getDate" data-target="#getDate">
                                 </div>
                                 <div style="text-align: center">
-                                    Ngày : <input type="text" name="date" data-target="#getDate" id="date-date">
+                             Ngày :   <input type="text" name="date" data-target="#getDate" id="date-date">
                                 </div>
                             </label>
                         </div>
@@ -177,6 +178,7 @@
                                 <div class="row ">
                                     <div id="getTime"></div>
                                 </div>
+
                             </div>
                         </div>
                         <br>
@@ -190,7 +192,10 @@
                     </script>
                 </div>
 
+
                 <input type="number" name="level" value="1" class="an-input">
+
+
             </div>
             <div class="card-footer">
                 <button type="submit" class="btn btn-primary">Thêm</button>

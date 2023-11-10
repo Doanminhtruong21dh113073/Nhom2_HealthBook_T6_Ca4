@@ -14,6 +14,6 @@ class SendMailController extends Controller
             'school' =>'huflit'
             
         ];
-        Mail::to('khoaanguyen@gmail.com')->send(new SendNoti($data));    
+        Mail::to('doanminhtruong0506@gmail.com')->send(new SendNoti($data));    
     }
 }

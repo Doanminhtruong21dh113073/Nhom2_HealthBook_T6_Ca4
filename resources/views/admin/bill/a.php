@@ -58,8 +58,8 @@ $("select#select-category").change(function() {
             <div class="col-lg-12 col-xl-7">
                 <div class="card">
                     <div class="card-body p-5">
+
                         <div class="border-top border-gray-200 pt-4 mt-4">
-                            <!-- Customer Information -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="customer">Customer:</label>
@@ -74,7 +74,6 @@ $("select#select-category").change(function() {
                                         value="{{ $booking->id }}">
                                 </div>
                             </div>
-                            <!-- Service Information -->
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="product">Sử dụng dịch vụ loại:</label>
@@ -88,13 +87,11 @@ $("select#select-category").change(function() {
                                 </div>
                             </div>
                         </div>
-                        <!-- Payment Information -->
                         <div class="border-top border-gray-200 mt-4 py-4">
                             <div class="row">
-                                <!-- Client Information -->
                                 <div class="col-md-6">
                                     <div class="text-muted mb-2">Client</div>
-                                    <strong>John McClane</strong>
+                                    <strong> John McClane </strong>
                                     <p class="fs-sm">
                                         989 5th Avenue, New York, 55832
                                         <br />
@@ -103,10 +100,9 @@ $("select#select-category").change(function() {
                                         </a>
                                     </p>
                                 </div>
-                                <!-- Payment To Information -->
                                 <div class="col-md-6 text-md-end">
                                     <div class="text-muted mb-2">Payment To</div>
-                                    <strong>Themes LLC</strong>
+                                    <strong> Themes LLC </strong>
                                     <p class="fs-sm">
                                         9th Avenue, San Francisco 99383
                                         <br />
@@ -117,14 +113,16 @@ $("select#select-category").change(function() {
                                 </div>
                             </div>
                         </div>
-                        <!-- Total -->
+
                         <div class="mt-5">
+
                             <div class="d-flex justify-content-end mt-3">
                                 <h5 class="me-3">Total:</h5>
-                                <h5 class="text-success">{{ $totalAmount }} USD</h5>
+                                <h5 class="text-success">$399.99 USD</h5>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

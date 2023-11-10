@@ -10,8 +10,11 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Telegram\Bot\Laravel\Facades\Telegram;
 
+// use Illuminate\Database\Query\JoinClause;
+
 class BookingController extends Controller
 {
+
     public function index()
     {
         $data['booking'] = DB::table('booking')
@@ -25,23 +28,23 @@ class BookingController extends Controller
 
     public function create()
     {
-        $data['barber'] = DB::table('barbers')->get();
-        $data['service'] = DB::table('services')->get();
-        $data['category'] = DB::table('categories')->get();
+        $data['barber'] = DB::table('barbers')
+            ->get();
+        $data['service'] = DB::table('services')
+            ->get();
+        $data['category'] = DB::table('categories')
+            ->get();
         $data['user'] = DB::table('users')
             ->where('role', '=', 'doctor')
             ->where('status', '=', 'active')
             ->get();
-
         return view('admin.booking.create', $data);
     }
-
     public function store(StoreRequest $request)
     {
         $data = $request->except('_token');
         $bookingDate = Carbon::createFromFormat('d/m/Y', $data['date']);
         $now = Carbon::now();
-
         if ($bookingDate->lt($now)) {
             return redirect()->back()->withErrors(['date' => 'Ngày đặt lịch phải lớn hơn ngày hiện tại']);
         }
@@ -96,11 +99,10 @@ class BookingController extends Controller
             'text' => $text,
         ]);
 
-        $data['created_at'] = now();
+        $data['created_at'] = new \DateTime();
         DB::table('booking')->insert($data);
         return redirect()->route('admin.booking.index', $data)->with('success', 'Đăng Kí Lịch Thành Công');
     }
-
     public function edit($id)
     {
         $data['category'] = DB::table('categories')->get();
@@ -120,11 +122,10 @@ class BookingController extends Controller
             ->where('time', '!=', $time)->get();
         return view('admin.booking.edit', $data);
     }
-
     public function update(UpdateRequest $request, $id)
     {
         $data = $request->except('_token');
-        $data['updated_at'] = now();
+        $data['updated_at'] = new \DateTime();
         $data['status'] = 1; // set the status to "confirmed"
         DB::table('booking')->where('id', $id)->update($data);
         return redirect()->route('admin.booking.index')

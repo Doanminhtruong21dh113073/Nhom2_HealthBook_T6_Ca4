@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-light-primary elevation-4" style="background: rgb(204, 204, 204)">
+<aside class="main-sidebar sidebar-light-primary elevation-4" style="background:rgb(204, 204, 204)">
 
     <!-- Brand Logo -->
     <a class="brand-link" style="text-align: center">
@@ -9,22 +9,23 @@
         <!-- Sidebar user (optional) -->
         <style>
             .image {
-                margin: 10px 5px 5px 5px;
+                margin: 10px 5px 5px 5px
             }
 
             .image img {
-                border-radius: 20%;
+                border-radius: 20%
             }
         </style>
         <div class="a">
-            <div class="image" style="color: aliceblue;">
-                <div class="image" style="color: rgb(5, 5, 5); border-radius: 20%; text-align: center;">
+            <div class="image" style="color:aliceblue">
+                <div class="image" style="color:rgb(5, 5, 5); border-radius:20%;text-align:center">
                     <img width="90" src="{{ asset(Auth::user()->images) }}" alt="User Image">
                     <br>
-                    Xin chào {{ Auth::user()->name }}!
+                    Xin chào {{ Auth::user()->name }} !
                 </div>
             </div>
             <br />
+
         </div>
 
         <!-- SidebarSearch Form -->
@@ -51,8 +52,10 @@
                             <i class="fas fa-list"></i>
                             <p>
                                 Tất cả nhân sự
+
                             </p>
                         </a>
+
                     </li>
                 @endif
                 <li class="nav-item">
@@ -105,6 +108,7 @@
                         </ul>
                     </li>
                 @endif
+
                 @if (Auth::user()->role === 'admin')
                     <li class="nav-item">
                         <a href="#" class="nav-link">
@@ -164,6 +168,7 @@
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
+
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.date_off.index') }}" class="nav-link">
@@ -189,6 +194,7 @@
                                 <i class="right fas fa-angle-left"></i>
                             </p>
                         </a>
+
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.date_off.index') }}" class="nav-link">
@@ -196,6 +202,7 @@
                                     <p>Danh sách đăng kí</p>
                                 </a>
                             </li>
+
                         </ul>
                     </li>
                 @endif
@@ -207,28 +214,45 @@
                                 Đơn Hàng
                             </p>
                         </a>
+                        {{-- <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('admin.bill.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Tạo Hóa Đơn</p>
+                                </a>
+                            </li>
+                            {{-- <li class="nav-item">
+                                <a href="{{ route('admin.cash.index') }}" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>Thanh Toán Hóa Đơn</p>
+                                </a>
+                            </li> 
+                        </ul> --}}
                     </li>
                     <li class="nav-item">
                         <a href="{{ route('admin.history.history') }}" class="nav-link">
                             <i class="fas fa-history"></i>
                             <p>
                                 Lịch Sử
+
                             </p>
                         </a>
+
                     </li>
                 @endif
             </ul>
         </nav>
+
         <!-- /.sidebar-menu -->
         <form method="POST" action="{{ route('auth.logout') }}">
             @csrf
             <li>
-                <a class="dropdown-item d-flex" href="javascript:void(0);"
-                    onclick="this.closest('form').submit();">
+                <a class="dropdown-item d-flex" href="javascript:void(0);" onclick="this.closest('form').submit();">
                     <i class="ti ti-logout fs-18 me-2 op-7"></i>Log Out
                 </a>
             </li>
         </form>
     </div>
+
     <!-- /.sidebar -->
 </aside>
