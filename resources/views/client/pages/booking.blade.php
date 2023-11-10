@@ -1,50 +1,210 @@
-@extends('layouts.app')
+@extends('client.master')
+@section('module', 'Đặt Lịch')
+@section('action', 'Salon')
 
-@section('content')
-    <form action="{{ route('client.booking.store') }}" method="POST">
-        @csrf
-
-
-        <div class="form-group">
-            <label for="selected_user_id">Chọn người dùng:</label>
-            <select name="selected_user_id" id="selected_user_id" class="form-control">
-                @foreach ($users as $user)
-                    <option value="{{ $user->id }}">{{ $user->name }}</option>
-                @endforeach
-            </select>
-        </div>
-        <div class="form-group">
-            <label for="selected_category_id">Chọn category:</label>
-            <select name="selected_category_id" id="selected_category_id" class="form-control">
-                <!-- Tùy chọn category sẽ được cập nhật thông qua JavaScript -->
-            </select>
-        </div>
-        <button type="submit" class="btn btn-primary">Chọn</button>
-    </form>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+@push('date')
+    <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/date.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/time.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/day.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('administrator/dist/css/img.css') }}">
+@endpush
+@push('datejs')
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script>
-        $(document).ready(function() {
-            $('#selected_user_id').change(function() {
-                var selectedUserId = $(this).val();
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
 
-                $.ajax({
-                    type: "POST",
-                    url: "{{ route('client.booking.getCategories') }}", // Sử dụng route() để tạo URL
-                    data: {
-                        user_id: selectedUserId
-                    },
-                    success: function(data) {
-                        $('#selected_category_id').empty();
-                        $.each(data, function(key, value) {
-                            $('#selected_category_id').append('<option value="' + key + '">' + value + '</option>');
-                        });
-                    }
-                });
+        $("#getDate").change(function() {
+            var $id = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.booking.getValue') }}",
+                data: {
+                    value: $id
+                },
+                dataType: "html",
+                success: function(data) {
+
+                    $("input#date-date").val(data);
+                }
+            });
+        })
+
+        $("#getDate").change(function() {
+            var $id = $(this).val();
+            var $id1 = $("input.radio-barber:checked").val();
+            // alert($id1);
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.booking.getTime') }}",
+                data: {
+                    value: $id,
+                    barber: $id1
+                },
+                dataType: "html",
+                success: function(data) {
+                    $("#getTime").html(data);
+                }
+            });
+        })
+        $("select#select-category").change(function() {
+            var $categoryId = $(this).val();
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.booking.getBarber') }}",
+                data: {
+                    idcategory: $categoryId
+                },
+                dataType: "html",
+                success: function(barberData) {
+                    $("#getBarber").html(barberData);
+                }
+            });
+          
+
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.booking.getPrice') }}",
+                data: {
+                    idservice: $categoryId
+                },
+                dataType: "html",
+                success: function(priceData) {
+                    $("#getPrice").html(priceData);
+                }
             });
         });
-        </script>
+
+        $("select#select-user").change(function() {
+            var $id = $(this).val();
+            $.ajax({
+                type: "POST",
+                url: "{{ route('admin.booking.getPhone_Email') }}",
+                data: {
+                    iduser: $id
+                },
+                dataType: "html",
+                success: function(data) {
+                    $("#phone-email").html(data);
+                }
+            });
+        })
+    </script>
+    <script>
+        $(function() {
+            $("#getDate").datepicker({
+                dateFormat: 'dd/mm/yy'
+            }).val();
+        });
+    </script>
+@endpush
+@section('content')
+    <div class="card">
+        <form action="{{ route('client.booking.booking_store') }}" method="post">
+            {{ csrf_field() }}
+            <div class="card-header">
+                <h3 class="card-title">Đặt Lịch</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Họ và Tên:</label>
+                    <input type="text" class="form-control" name="customer" placeholder="Nguyen Van A"
+                        value="{{ old('customer') }}">
+                    @error('name')
+                        <span style="color: red">!!!{{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Số Điện Thoại:</label>
+                    <input type="text" class="form-control" name="phone" placeholder="0123456789"
+                        value="{{ old('phone') }}">
+                    @error('phone')
+                        <span style="color: red">!!!{{ $message }}</span>
+                    @enderror
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email:</label>
+                    <input type="email" class="form-control" name="email" placeholder="Enter email"
+                        value="{{ old('email') }}">
+                    @error('email')
+                        <span style="color: red">!!!{{ $message }}</span>
+                    @enderror
+                </div>
 
 
-    @endsection
+                <div class="form-group">
+                    <label>Dịch Vụ:</label>
+                    <div style="height: calc(4 * 28px); overflow-y: auto;">
+                        <select class="form-control" id="select-category" name="service">
+                            <option selected="selected"></option>
+                            @foreach ($service as $item)
+                                <option value="{{ $item->id }}">{{ $item->service }}</option>
+                            @endforeach
+                        </select>
+                    </div>
+
+                </div>
+                <div class="form-group" id="getPrice">
+                </div>
+                <div id="getBarber" style="margin-bottom: 50px"></div>
+
+
+                <div class="form-group" id="lop-phu">
+                    <div class="d-flex" style="width: 100%">
+                        <div class="form-date">
+                            <label for="date-date">
+                                <div id="getDate" data-target="#getDate">
+                                </div>
+                                <input type="text" name="date" data-target="#getDate" id="date-date">
+
+                            </label>
+                        </div>
+                        <div class="form-time ">
+                            <label for="">Thời gian:</label>
+                            <div class="container">
+                                <div class="row ">
+                                    <div id="getTime"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Chú thích:</label>
+                    <style>
+                        textarea {
+                            width: 100%
+                        }
+                    </style>
+                    <textarea name="text" id="editor1" width="100%"></textarea>
+                    <script>
+                        CKEDITOR.replace('editor1');
+                    </script>
+                </div>
+
+
+                <input type="number" name="level" value="1" class="an-input">
+
+
+            </div>
+            <div class="card-footer">
+                <button type="submit" class="btn btn-primary">Thêm</button>
+            </div>
+        </form>
+    </div>
+@endsection

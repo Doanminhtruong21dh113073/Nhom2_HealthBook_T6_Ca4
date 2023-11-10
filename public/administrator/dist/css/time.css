@@ -1,0 +1,32 @@
+.time-text{
+    color: rgb(12, 11, 11);
+    font-size:15pt;
+    text-align: center;
+    
+
+}
+.time-card{
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+
+}
+
+.radio-time{
+    display: none;
+}
+
+.radio-time:checked~.time-card{
+    color:#fff;
+    background: #bdc5d6;
+    border: #253c6a solid
+}
+.radio-time:checked~.time-text{
+    color:#fff;
+  
+}

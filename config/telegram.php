@@ -17,7 +17,7 @@ return [
     | - name: The *personal* name you would like to refer to your bot as.
     |
     |       - token:    Your Telegram Bot's Access Token.
-                        Refer for more details: https://core.telegram.org/bots#botfather
+    Refer for more details: https://core.telegram.org/bots#botfather
     |                   Example: (string) '123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11'.
     |
     |       - commands: (Optional) Commands to register for this bot,
@@ -32,7 +32,8 @@ return [
     */
     'bots' => [
         'mybot' => [
-            'token' => env('TELEGRAM_BOT_TOKEN', 'YOUR-BOT-TOKEN'),
+            'username' => env('TELEGRAM_BOT', 'Nancy'),
+            'token' => env('TELEGRAM_BOT_TOKEN', '6156503987:AAFU9DMaOYbQ4C_VgmpcimFmDrJCHVG2GjE'),
             'certificate_path' => env('TELEGRAM_CERTIFICATE_PATH', 'YOUR-CERTIFICATE-PATH'),
             'webhook_url' => env('TELEGRAM_WEBHOOK_URL', 'YOUR-BOT-WEBHOOK-URL'),
             'commands' => [
@@ -126,7 +127,7 @@ return [
     |
     */
     'commands' => [
-        HelpCommand::class,
+      //  HelpCommand::class,
     ],
 
     /*
@@ -149,44 +150,42 @@ return [
     */
     'command_groups' => [
         /* // Group Type: 1
-           'commmon' => [
-                Acme\Project\Commands\TodoCommand::class,
-                Acme\Project\Commands\TaskCommand::class,
-           ],
+        'commmon' => [
+        Acme\Project\Commands\TodoCommand::class,
+        Acme\Project\Commands\TaskCommand::class,
+        ],
         */
 
         /* // Group Type: 2
-           'subscription' => [
-                'start', // Shared Command Name.
-                'stop', // Shared Command Name.
-           ],
+        'subscription' => [
+        'start', // Shared Command Name.
+        'stop', // Shared Command Name.
+        ],
         */
 
         /* // Group Type: 3
-            'auth' => [
-                Acme\Project\Commands\LoginCommand::class,
-                Acme\Project\Commands\SomeCommand::class,
-            ],
-
-            'stats' => [
-                Acme\Project\Commands\UserStatsCommand::class,
-                Acme\Project\Commands\SubscriberStatsCommand::class,
-                Acme\Project\Commands\ReportsCommand::class,
-            ],
-
-            'admin' => [
-                'auth', // Command Group Name.
-                'stats' // Command Group Name.
-            ],
+        'auth' => [
+        Acme\Project\Commands\LoginCommand::class,
+        Acme\Project\Commands\SomeCommand::class,
+        ],
+        'stats' => [
+        Acme\Project\Commands\UserStatsCommand::class,
+        Acme\Project\Commands\SubscriberStatsCommand::class,
+        Acme\Project\Commands\ReportsCommand::class,
+        ],
+        'admin' => [
+        'auth', // Command Group Name.
+        'stats' // Command Group Name.
+        ],
         */
 
         /* // Group Type: 4
-           'myBot' => [
-                'admin', // Command Group Name.
-                'subscription', // Command Group Name.
-                'status', // Shared Command Name.
-                'Acme\Project\Commands\BotCommand' // Full Path to Command Class.
-           ],
+        'myBot' => [
+        'admin', // Command Group Name.
+        'subscription', // Command Group Name.
+        'status', // Shared Command Name.
+        'Acme\Project\Commands\BotCommand' // Full Path to Command Class.
+        ],
         */
     ],
 
