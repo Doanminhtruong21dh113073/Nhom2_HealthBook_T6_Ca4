@@ -5,37 +5,37 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Validation\ValidationException;
 
 class LoginController extends Controller
 {
-    // Hiển thị form đăng nhập
+    // Show the login form
     public function showLoginForm()
     {
         return view('auth.login');
     }
 
-    // Xử lý đăng nhập
+    // Process the login
     public function login(Request $request)
     {
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-            return redirect()->intended('admin/category/index'); // Chuyển hướng đến trang chính sau khi đăng nhập thành công
+            return redirect()->intended(route('admin.category.index')); // Redirect to the main page after successful login
         }
 
         $errors = [];
 
         if (!Auth::validate($credentials)) {
-            $errors['email'] = 'Email đăng nhập không chính xác.';
+            $errors['email'] = 'Invalid email address.';
         } else {
-            $errors['password'] = 'Password đăng nhập không chính xác.';
+            $errors['password'] = 'Invalid password.';
         }
 
         return back()->withErrors($errors)->withInput($request->except('password'));
     }
-    // Xử lý đăng xuất
+
+    // Logout the user
     public function logout(Request $request)
     {
         Auth::logout();
