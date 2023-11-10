@@ -19,19 +19,12 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 ## 🛠 Tính năng & Công cụ 
 
 ### 🌐 Giao diện người dùng:
-<img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" />
-<img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/css/css.png" />
-<img align="left" alt="SCSS" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/sass/sass.png" />
-<img align="left" alt="React" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" /><br>
+
 
 ### 🖥 Hệ thống phía sau & Cơ sở dữ liệu:
-<img align="left" alt="Node.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/nodejs/nodejs.png" />
-<img align="left" alt="Express.js" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/express/express.png" />
-<img align="left" alt="MySQL" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/mysql/mysql.png" /><br>
 
 ### Công cụ khác:
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/git/git.png" />
-<img align="left" alt="Docker" width="26px" src="https://raw.githubusercontent.com/github/explore/main/topics/docker/docker.png" />
+
 <br>
 
 
@@ -64,11 +57,12 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 
 </div>
 
-
-
+<a href="#" target="_blank">
+  <img src="public/ckeditor/samples/img/z4867360969876_f29f15507128468a6faaa1a0c08316a3.jpg" width="1200" alt="Sprint 2" />
+</a>
 
 <a href="#" target="_blank">
-  <img src="svg/nhom2.svg" width="1200" alt="Healthbook" />
+  <img src="public/ckeditor/samples/img/z4867360969876_f29f15507128468a6faaa1a0c08316a3 (1).jpg" width="1200"  />
 </a>
 <h2 align="center">🛠 Technologies and Tools 🛠</h2>
 
