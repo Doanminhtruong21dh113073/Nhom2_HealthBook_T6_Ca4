@@ -16,14 +16,6 @@ Sứ mệnh chính của chúng tôi là mang đến trải nghiệm không mấ
 
 Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những người có ít kinh nghiệm về công nghệ cũng có thể dễ dàng đặt lịch hẹn. Hơn nữa, hệ thống phía sau mạnh mẽ của chúng tôi đảm bảo bảo mật thông tin và an ninh tuyệt đối. Sức khỏe của bạn là vô giá, và chúng tôi đối xử với dữ liệu của bạn với sự tôn trọng xứng đáng. 🔒
 
-## 🛠 Tính năng & Công cụ 
-
-### 🌐 Giao diện người dùng:
-
-
-### 🖥 Hệ thống phía sau & Cơ sở dữ liệu:
-
-### Công cụ khác:
 
 <br>
 
