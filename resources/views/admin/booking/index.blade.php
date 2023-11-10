@@ -1,4 +1,5 @@
 @extends('admin.master')
+
 @section('module', 'Danh Sách')
 @section('action', 'Đặt Lịch')
 
@@ -27,37 +28,12 @@
 @endpush
 
 @push('jshand')
-    <script>
-        var deleteLinks = document.querySelectorAll('.delete');
-
-        for (var i = 0; i < deleteLinks.length; i++) {
-            deleteLinks[i].addEventListener('click', function(event) {
-                event.preventDefault();
-
-                var choice = confirm(this.getAttribute('data-confirm'));
-
-                if (choice) {
-                    window.location.href = this.getAttribute('href');
-                }
-            });
-        }
-    </script>
-    <!-- Page specific script -->
-    <script type="text/javascript">
-        $(function() {
-            $("#example1").DataTable({
-                "responsive": true,
-                "lengthChange": false,
-                "autoWidth": false,
-                "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-        });
-    </script>
+    <script src="{{ asset('js/admin-handlers.js') }}"></script>
 @endpush
+
 @section('content')
 @if (Auth::user())
     <div class="card">
-       
         <div class="card-body">
             <table id="example1" class="table table-bordered table-hover">
                 <thead>
@@ -75,28 +51,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach ($booking as $item)
-                        @if ($item->barber == Auth::user()->id||Auth::user()->role == 'admin')
+                    @foreach ($booking as $bookingItem)
+                        @if ($bookingItem->barber == Auth::user()->id || Auth::user()->role == 'admin')
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
                                 <td>
-                                    KH: {{ $item->customer }} <br>
-                                    Phone: {{ $item->phone }}
+                                    KH: {{ $bookingItem->customer }} <br>
+                                    Phone: {{ $bookingItem->phone }}
                                 </td>
-                                <td>{{ $item->barber_name }}</td>
-                                <td>Combo: {{ $item->category }}</td>
-                                <td>{{ $item->service_name }}</td>
+                                <td>{{ $bookingItem->barber_name }}</td>
+                                <td>Combo: {{ $bookingItem->category }}</td>
+                                <td>{{ $bookingItem->service_name }}</td>
                                 <td>
-                                    {{ $item->date }}
-                                    {{ $item->time . ':00' }}
+                                    {{ $bookingItem->date }}
+                                    {{ $bookingItem->time . ':00' }}
                                 </td>
-                                <td>{{ $item->price }}</td>
                                 <td>
-                                    @if ($item->status == 1)
+                                    @if ($bookingItem->status == 1)
                                         Đã duyệt
                                     @else
                                         <form method="POST"
-                                            action="{{ route('admin.booking.approve', ['id' => $item->id]) }}">
+                                            action="{{ route('admin.booking.approve', ['id' => $bookingItem->id]) }}">
                                             @csrf
                                             <button type="submit" class="btn btn-primary">Duyệt</button>
                                         </form>
@@ -104,11 +79,12 @@
                                 </td>
                                 <td>
                                     <a class="btn btn-warning"
-                                        href="{{ route('admin.booking.edit', ['id' => $item->id]) }}">Sửa</a>
+                                        href="{{ route('admin.booking.edit', ['id' => $bookingItem->id]) }}">Sửa</a>
                                 </td>
                                 <td>
-                                    <a class="btn btn-danger delete" data-confirm="Are you sure to delete this item?"
-                                        href="{{ route('admin.booking.destroy', ['id' => $item->id]) }}">Xóa</a>
+                                    <a class="btn btn-danger delete"
+                                        data-confirm="Are you sure to delete this item?"
+                                        href="{{ route('admin.booking.destroy', ['id' => $bookingItem->id]) }}">Xóa</a>
                                 </td>
                             </tr>
                         @endif
@@ -119,4 +95,3 @@
     </div>
 @endif
 @endsection
-
