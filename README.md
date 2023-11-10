@@ -57,7 +57,8 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 
 </div>
 
-## Sprint 2
+## 🎉 Sprint 2 🎉
+
 
 <a href="#" target="_blank">
   <img src="public/ckeditor/samples/img/z4867360969876_f29f15507128468a6faaa1a0c08316a3.jpg" width="1200" alt="Sprint 2" />
