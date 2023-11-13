@@ -2,6 +2,7 @@
 
 <head>
     @include('layouts.client.blocks.head')
+    @stack('css')
 </head>
 
 <body>
@@ -302,7 +303,7 @@
             <div class="row">
                 <div class="col-12">
                     <!-- Style switcher -->
-                  
+
                     <!-- end Style switcher -->
                 </div><!--end col-->
             </div><!--end row-->
@@ -331,8 +332,14 @@
     </div>
     <!-- Offcanvas End -->
     @include('layouts.client.blocks.foot')
-
 </body>
+@stack('js')
+
+@stack('jshand')
+@stack('date')
+@stack('name')
+
+@stack('datejs')
 
 <!-- Mirrored from shreethemes.in/doctris/layouts/landing/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Nov 2023 17:51:37 GMT -->
 

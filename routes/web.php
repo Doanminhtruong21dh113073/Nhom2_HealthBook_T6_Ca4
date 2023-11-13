@@ -49,8 +49,31 @@ Route::prefix('/')->name('client.')->group(function () {
     Route::controller(HomeController::class)->name('home.')->group(function () {
         Route::get('/', 'index')->name('index');
 
+        Route::post('gettime', 'getTime')->name('getTime');
+        Route::post('getPrice','getPrice')->name('getPrice');
+        Route::post('getProduct','getProduct')->name('getProduct');
+        Route::post('getBarber', 'getBarber')->name('getBarber');
+        Route::post('getDate', 'getDate')->name('getDate');
+        Route::post('getValue', 'getValue')->name('getValue');
+        Route::post('getPhone_Email', 'getPhone_Email')->name('getPhone_Email');
+
     });
 });
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::prefix('booking')->controller(BookingController::class)->name('booking.')->group(function () {
+     
+        Route::post('gettime', 'getTime')->name('getTime');
+        Route::post('getPrice','getPrice')->name('getPrice');
+        Route::post('getProduct','getProduct')->name('getProduct');
+        Route::post('getBarber', 'getBarber')->name('getBarber');
+        Route::post('getDate', 'getDate')->name('getDate');
+        Route::post('getValue', 'getValue')->name('getValue');
+        Route::post('getPhone_Email', 'getPhone_Email')->name('getPhone_Email');
+
+
+    });
+});
+   
 Route::middleware(['check_login'])->group(function () {
     Route::prefix('admin')->name('admin.')->group(function () {
         Route::prefix('booking')->controller(BookingController::class)->name('booking.')->group(function () {
@@ -60,13 +83,7 @@ Route::middleware(['check_login'])->group(function () {
             Route::get('edit/{id}', 'edit')->name('edit');
             Route::post('update/{id}', 'update')->name('update');
             Route::get('destroy/{id}', 'destroy')->name('destroy');
-            Route::post('gettime', 'getTime')->name('getTime');
-            Route::post('getPrice','getPrice')->name('getPrice');
-            Route::post('getProduct','getProduct')->name('getProduct');
-            Route::post('getBarber', 'getBarber')->name('getBarber');
-            Route::post('getDate', 'getDate')->name('getDate');
-            Route::post('getValue', 'getValue')->name('getValue');
-            Route::post('getPhone_Email', 'getPhone_Email')->name('getPhone_Email');
+         
             Route::post('approve/{id}', 'approve')->name('approve');
 
 

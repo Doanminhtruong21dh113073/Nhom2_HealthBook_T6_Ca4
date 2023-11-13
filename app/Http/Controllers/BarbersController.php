@@ -32,7 +32,7 @@ class BarbersController extends Controller
 
         return view('client.pages.booking', $data);
     }
-  
+
     public function booking_store(StoreRequest $request)
     {
         $data = $request->except('_token');
@@ -66,35 +66,11 @@ class BarbersController extends Controller
             'time' => 'required',
         ]);
 
-        $text = "<b>Thông tin đặt lịch của khách hàng :</b>\n\n"
-            . "<b>Customer: </b>\n"
-            . "$request->customer\n"
-            . "<b>Email Address: </b>\n"
-            . "$request->email\n"
-            . "<b>Phone: </b>\n"
-            . "$request->phone\n"
-            . "<b>Combo: </b>\n"
-            . "$request->category\n"
-            . "<b>Dịch Vụ: </b>\n"
-            . "$service\n"
-            . "<b>Total: </b>\n"
-            . "$formattedPrice VND\n"
-            . "<b>Bác Sĩ: </b>\n"
-            . "$user\n"
-            . "<b>Date: </b>\n"
-            . "$request->date\n"
-            . "<b>Time: </b>\n"
-            . "$request->time:00 AM\n";
+        
 
-        Telegram::sendMessage([
-            'chat_id' => env('TELEGRAM_CHANNEL_ID', ''),
-            'parse_mode' => 'HTML',
-            'text' => $text,
-        ]);
-
-        $data['created_at'] = new \DateTime ();
+        $data['created_at'] = new \DateTime();
         DB::table('booking')->insert($data);
-        return redirect()->route('client.booking.booking_create', $data)->with('success', 'Đăng Kí Lịch Thành Công');
+        return redirect()->route('client.home.index', $data)->with('success', 'Đăng Kí Lịch Thành Công');
     }
     // public function getTime(Request $request)
     // {
@@ -233,10 +209,8 @@ class BarbersController extends Controller
                 for ($j = 0; $j < $sl; $j++) {
                     if ($i == $a[$j]) {
                         $t = false;
-                    }
-                    ;
-                }
-                ;
+                    };
+                };
                 if ($t == true) {
                     $xhtml = '<label class="col-2" for="' . $i . '">';
                     $xhtml .= '<div class="">';
@@ -250,7 +224,6 @@ class BarbersController extends Controller
                 }
             }
         }
-
     }
     public function getDate(Request $request)
     {
@@ -289,10 +262,18 @@ class BarbersController extends Controller
             ->get();
         foreach ($data['sp'] as $item) {
             $priceFormatted = number_format(floatval($item->price), 0, '.', ',');
-            $sp = '<label for="">Tổng tiền</label>';
+            $sp ='<div class="col-6">';
+            $sp .= '<div class="mb-3">';
+            $sp .= '<label for="" class="form-label">Tổng tiền</label>';
             $sp .= '<input type="text" class="form-control" name="price" value="' . $priceFormatted . ' VND">';
-            $sp .= '<label for="">Thuộc Combo</label>';
-            $sp .= '<input class="form-control" name="category" value="' . $item->category . '">';
+            $sp .= '</div>';
+
+            $sp .= '<div class="mb-3">';
+            $sp .= '<label class="form-label" for="">Thuộc Chuyen6 Khoa</label>';
+            $sp .= '<input class="form-group" name="category" value="' . $item->category . '">';
+            $sp .= '</div>';
+            $sp .= '</div>';
+
         }
         echo $sp;
     }

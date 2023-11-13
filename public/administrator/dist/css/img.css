@@ -63,7 +63,7 @@
     border: 1px solid #253c6a ;
 }
 .radio-btns {
-    width: 200px;
+    width: 200px;   
     height: 200px;
     position: relative;
     text-align: center;
@@ -73,6 +73,16 @@
     background-color: #eaeaea;
     float:left;
     margin-right: 15px;
+}
+
+.doctor-card {
+    height: 100%; /* Đảm bảo tất cả các card có cùng chiều cao */
+}
+
+.doctor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng bóng khi hover */
+    transform: scale(1.05); /* Nhẹ nhàng phóng to card khi hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Chuyển đổi mượt mà */
 }
 
 .radio-btns > img {

@@ -21,3 +21,32 @@
 <link href="{{ asset('client/assets/libs/%40iconscout/unicons/css/line.css')}}" type="text/css" rel="stylesheet" />
 <!-- Style Css-->
 <link href="{{ asset('client/assets/css/style.min.css')}}" class="theme-opt" rel="stylesheet" type="text/css" />
+
+
+
+
+
+<!-- Elegant Font Icons CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/elegant-font-icons.css') }}">
+<!-- Elegant Line Icons CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/elegant-line-icons.css') }}">
+<!-- Themify Icon CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/themify-icons.css') }}">
+<!-- Barber Icons CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/barber-icons.css') }}">
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/bootstrap.min.css') }}">
+<!-- animate CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/animate.min.css') }}">
+<!-- Venobox CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/venobox/venobox.css') }}">
+<!-- Nice Select CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/nice-select.css') }}">
+<!-- OWL-Carousel CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/owl.carousel.css') }}">
+<!-- Slick Nav CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/slicknav.min.css') }}">
+<!-- Main CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/main.css') }}">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="{{ asset('clientstrator/css/responsive.css') }}">

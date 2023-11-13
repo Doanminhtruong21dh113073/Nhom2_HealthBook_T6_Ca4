@@ -10,7 +10,7 @@
 
 </head>
 <body>
-      <div class="container" >
+      <div class="ms-3" >
         <div class="row">
                 @for ($i = 7; $i <= 18; $i++)
                     <label class="col-2 " for="{{$i}}">
