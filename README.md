@@ -41,8 +41,7 @@ Giao diện trực quan của **HealthBooking** đảm bảo ngay cả những n
 
 | **Thành viên**          | **Mã sinh viên** |
 |------------------------|------------------|
-| **Phạm Hải Sơn**       | 21DH112887       |
-| **Nguyễn Đình Quốc Uy**| 21DH112132       |
+| **Phan Đức Anh **       | 21DH113453      |
 | **Đoàn Minh Trường**   | 21DH113073       |
 
 </div>
